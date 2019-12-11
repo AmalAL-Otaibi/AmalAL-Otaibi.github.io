@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <style>
+  .tab{
+margin-top: 30px;
+}
+.tab .nav-tabs{
+border:none;
+border-bottom: 1px solid #e4e4e4;
+}
+.nav-tabs li a{
+padding: 15px 40px;
+border:1px solid #ededed;
+border-top: 2px solid #ededed;
+border-right: 0px none;
+background: #7a81f4;
+color:#fff;
+border-radius: 0px;
+margin-right: 0px;
+font-weight: bold;
+transition: all 0.3s ease-in 0s;
+}
+.nav-tabs li a:hover{
+border-bottom-color: #ededed;
+border-right: 0px none;
+background: #00b0ad;
+color: #fff;
+}
+.nav-tabs li a i{
+display: inline-block;
+text-align: center;
+margin-right:10px;
+}
+.nav-tabs li:last-child{
+border-right:1px solid #ededed;
+}
+.nav-tabs li.active a,
+.nav-tabs li.active a:focus,
+.nav-tabs li.active a:hover{
+border-top: 3px solid #00b0ad;
+border-right: 1px solid #d3d3d3;
+margin-top: -15px;
+color: #444;
+padding: 22px 40px;
+}
+.tab .tab-content{
+padding: 20px;
+line-height: 22px;
+box-shadow:0px 1px 0px #808080;
+}
+.tab .tab-content h3{
+margin-top: 0;
+}
+@media only screen and (max-width: 767px){
+.nav-tabs li{
+width:100%;
+margin-bottom: 10px;
+}
+.nav-tabs li a{
+padding: 15px;
+}
+.nav-tabs li.active a,
+.nav-tabs li.active a:focus,
+.nav-tabs li.active a:hover{
+padding: 15px;
+margin-top: 0;
+}
+}
+
+  </style>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-8">
+<div class="tab" role="tabpanel">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-user"></i>Section 1</a></li>
+<li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-envelope"></i>Section 2</a></li>
+<li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-cube"></i>Section 3</a></li>
+<li role="presentation"><a href="#Section4" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-comment"></i>Section 4</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content tabs">
+<div role="tabpanel" class="tab-pane fade in active" id="Section1">
+<h3>Section-1</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id, rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus scelerisque.  </p>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="Section2">
+<h3>Section-2</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id, rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus scelerisque.  </p>
+</div>
+
+
+<div role="tabpanel" class="tab-pane fade" id="Section3">
+<h3>Section-3</h3>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id, rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus scelerisque. </p>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="Section4">
+<h3>Section-4</h3>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id, rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus scelerisque. </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
