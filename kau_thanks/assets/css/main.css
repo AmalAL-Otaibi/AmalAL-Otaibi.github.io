@@ -1,5 +1,4 @@
-
-@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,500,700');
 html {
   overflow-x: hidden;
 }
@@ -8,7 +7,7 @@ body {
   background: #fff;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Droid Arabic Kufi', sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -26,7 +25,7 @@ h1, h2, h3, h4 {
 
   color: #222222;
   font-weight: 700;
-  font-family: 'Droid Arabic Kufi', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -46,7 +45,7 @@ a a:focus {
 
 p {
   font-weight: 400;
-  font-family: 'Droid Arabic Kufi', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0px;
   font-size: 14px;
 }
