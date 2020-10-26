@@ -28,6 +28,61 @@
  <body>
 
 
+   <!-- Navbar Start -->
+   <header id="header-wrap">
+        <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar bg-gray">
+          <div class="container">
+              <label for="UserName"  style="color: #18B0BC">
+           مرحبا بك : أمل أحمد سفران العتيبي
+           </label>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#hero-area">
+                    <i class="fa fa-home" style='font-size:20px'></i>
+           الرئيسة
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="searchCollobrationWorker.html">
+                    <i class="fa fa-users" style='font-size:20px'></i>
+               قائمة المنسوبين
+                  </a>
+                </li>
+
+                <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">      <i class="fa fa-handshake-o" style='font-size:18px'></i>
+
+ الاعمال التعاونية</a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"> قائمة اعمالي </a>
+    <a class="dropdown-item" href="#">الاستعلام </a>
+  </div>
+ </li>
+                <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">  <i class='fa fa-check-square-o' style='font-size:18px'></i>
+ طلبات التحقق</a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"> متابعة الطلبات </a>
+    <a class="dropdown-item" href="#">الاستعلام </a>
+  </div>
+ </li>
+                <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"> <i class='fa fa-cog' style='font-size:18px'></i>
+ الاعدادات</a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">صورة العرض والتنبيهات </a>
+    <a class="dropdown-item" href="#">اعدادات مدير النظام</a>
+  </div>
+ </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+            <br/>
+        <!-- Navbar End -->
+      </head>
 
 
 
@@ -57,45 +112,63 @@
   </div>
        <hr/>
        <div class="row">
-  <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-        <label for="empthanks" class="grean-color">
-اجمالي الشكر المقدم عن اعمال فردية
- </label>
-
-  </div>
-  <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-    <label for="totalempthanks">
-  3
-   </label>
-  </div>
-  <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-    <label for="sitethanks" class="grean-color" >
-اجمالي الشكر المقدم عن اعمال جماعية
-</label>
-
-  </div>
-  <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-      <label for="totalsitethanks" >
-5
-</label>
-  </div>
-
-       </div>
-       <hr/>
-       <div class="row">
   <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" >
       <label for="collobration_work" class="grean-color" >
-   العمل المسبب للشكر
+  العمل المسبب للشكر
  </label>
   </div>
   <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-    <textarea id="collobration_work"  rows="4" class="form-control"
+
+       <select name="collabrations" id="collabrations" class="form-control" style="min-height:50px;">
+         <option value="1">تسجيل عمل جديد </option>
+         <option value="2">تقديم ورشة تدريبة </option>
+         <option value="3"> المساعدة في توصيف الجداول بنر </option>
+       </select>
+     </div>
+   </div>
+   <hr/>
+   <div class="row">
+<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" >
+  <label for="collobration_work" class="grean-color" >
+مسمى العمل
+</label>
+</div>
+<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+
+<textarea id="collobration_work"  rows="1" class="form-control"
+>
+    </textarea>
+</div>
+</div>
+<hr/>
+       <div class="row">
+  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" >
+      <label for="collobration_work" class="grean-color" >
+وصف العمل
+ </label>
+  </div>
+  <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+
+    <textarea id="collobration_work"  rows="3" class="form-control"
     >
         </textarea>
   </div>
 </div>
 <hr/>
+<div class="row">
+<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" >
+<label for="collobration_work" class="grean-color" >
+رسالة الشكر
+</label>
+</div>
+<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
 
+<textarea id="collobration_work"  rows="3" class="form-control"
+>
+ </textarea>
+</div>
+</div>
+<hr/>
 <div class="row">
 <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" >
   <label for="collobration_work_type" class="grean-color" >
@@ -149,6 +222,47 @@
            </div>
            <hr/>
            <div class="row">
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+          <label for="athorcollabrator" class="grean-color" >
+المساهمين الاضافيين
+</label>
+        </div>
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+          <div class="chkdropdown form-control" style="min-height:50px;">
+        	        هل ترغب في شكر موظف اخر على هذا العمل
+            		<ul>
+        	    	    <li>
+
+        		            <input type="checkbox" id="cdd1" >
+                         <label for="cdd1">أمل أحمد العتيبي</label>
+
+        		       </li>
+        		       <li>
+        		            <input type="checkbox" id="cdd2" >
+        		            <label for="cdd2">ثناء مبارك الشيخ </label>
+        		       </li>
+        		       <li>
+        		            <input type="checkbox" id="cdd3" >
+        		            <label for="cdd3">منى عبدالله الاحمدي</label>
+        		        </li>
+        		    </ul>
+        		</div>
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+   <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+     <label for="athorcollabrator" class="grean-color" >
+الوثائق الداعمة
+ </label>
+   </div>
+   <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+  <input type="file" id="img" name="img" accept="image/*">
+  <button class="btn btn-common">  رفع الملف  <i class="fa fa-upload"></i></button>
+     </div>
+   </div>
+<hr/>
+           <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
                                             <button class="btn btn-common">   شكرا    <i class="fa fa-thumbs-up"></i></button>
@@ -160,21 +274,19 @@
 
      </div>
      </div>
-   </section>
 
 
- <div id="copyright">
-   <div class="container">
-     <div class="row">
-       <div class="col-md-12">
-         <div class="copyright-content">
-           <p>عمادة تقنية المعلومات © 2020  جميع الحقوق محفوظة </p>
+     <div id="copyright">
+       <div class="container">
+         <div class="row">
+           <div class="col-md-12">
+             <div class="copyright-content">
+               <p>عمادة تقنية المعلومات © 2020  جميع الحقوق محفوظة </p>
+             </div>
+           </div>
          </div>
        </div>
      </div>
-   </div>
- </div>
-
 
 
 
@@ -205,4 +317,5 @@
    <script src="assets/js/contact-form-script.min.js"></script>
 
  </body>
+
 </html>
