@@ -27,6 +27,65 @@
 
   </head>
   <body>
+    <!-- Navbar Start -->
+        <header id="header-wrap">
+             <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar bg-gray">
+               <div class="container">
+                   <label for="UserName"  style="color: #18B0BC">
+                مرحبا بك : أمل أحمد سفران العتيبي
+                </label>
+                 <div class="collapse navbar-collapse" id="navbarCollapse">
+                   <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                     <li class="nav-item active">
+                       <a class="nav-link" href="main.html">
+                         <i class="fa fa-home" style='font-size:20px'></i>
+                الرئيسة
+                       </a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="searchCollobrationWorker.html">
+                         <i class="fa fa-users" style='font-size:20px'></i>
+                    قائمة المنسوبين
+                       </a>
+                     </li>
+
+                     <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">      <i class="fa fa-handshake-o" style='font-size:18px'></i>
+
+    الاعمال التعاونية</a>
+       <div class="dropdown-menu">
+         <a class="dropdown-item" href="ShowMycollobrationWorks.html"> قائمة اعمالي </a>
+         <a class="dropdown-item" href="viewAllcollobrationWorks.html">الاستعلام عن الاعمال التعاونية </a>
+       </div>
+     </li>
+                     <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">  <i class='fa fa-check-square-o' style='font-size:18px'></i>
+    طلبات التحقق</a>
+       <div class="dropdown-menu">
+         <a class="dropdown-item" href="viewReportsfollowup.html"> متابعة الطلبات </a>
+         <a class="dropdown-item" href="viewallReports.html">الاستعلام عن طلبات التحقق </a>
+       </div>
+     </li>
+                     <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"> <i class='fa fa-cog' style='font-size:18px'></i>
+    الاعدادات</a>
+       <div class="dropdown-menu">
+         <a class="dropdown-item" href="PhotoNontaificationSetting.html">صورة العرض والتنبيهات </a>
+
+
+            <a class="dropdown-item" href="SettingForSiteManger.html">تفعيل الصلاحيات  </a>
+         <a class="dropdown-item" href="SettingForSystemManger.html">اعدادات مدير النظام</a>
+       </div>
+     </li>
+
+                   </ul>
+                 </div>
+               </div>
+             </nav>
+                 <br/>
+             <!-- Navbar End -->
+           </head>
+
 
 
 
@@ -39,7 +98,19 @@
           <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">متابعة طلبات التحقق </h2>
           <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
         </div>
+<div class="row">
+    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+    </div>
+  <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
 
+  <label for="TotalWorksLabel" class="grean-color"> الطلبات الواردة  </label>
+  </div>
+  <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12">
+
+ <span class="dot"><label for="TotalWorks" > 1  </label></span>
+  </div>
+</div>
+<hr/>
         <div class="row">
    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
    <label for="Dept" class="grean-color"> الادارة </label>
@@ -52,14 +123,20 @@
      </select>
 
    </div>
-   <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-   <label for="reportDate" class="grean-color"> التاريخ </label>
+   <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12">
+   <label for="reportDate" class="grean-color"> من </label>
    </div>
-   <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+   <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+       <input type="date" id="reportDate" name="reportDate" class="form-control" style="min-height:50px;">
+   </div>
+   <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12">
+   <label for="reportDate" class="grean-color"> إلى</label>
+   </div>
+   <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
        <input type="date" id="reportDate" name="reportDate" class="form-control" style="min-height:50px;">
    </div>
    </div>
-        <hr/>
+
         <section id="listofReports" style="font-size:14px;">
         <div class="row">
           <div class="col-lg-12 col-md-3 col-xs-3">
