@@ -92,7 +92,7 @@
       <div class="container">
         <div class="section-header text-center">
 
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">قائمة الأعمال التعاونية للموظف </h2>
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">إعمالي التعاونية </h2>
           <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
         </div>
         <div class="row">
@@ -109,20 +109,28 @@
       <br/>
         <div class="row" style="border-bottom: 2px solid #F26227;box-shadow: 0 2px 0 #d3d3d3;">
 
-   <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+   <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
    <label for="empNmaelabel" class="grean-color"> الموظف </label>
    </div>
-   <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+   <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 
   <label for="empNmae" > أمل أحمد العتيبي    </label>
    </div>
    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
 
-   <label for="TotalWorksLabel" class="grean-color"> اجمالي الاعمال </label>
+   <label for="TotalWorksLabel" class="grean-color"> الاعمال المقبولة </label>
    </div>
    <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12">
 
-  <span class="dot"><label for="TotalWorks" > 2  </label></span>
+  <span class="dot"><label for="TotalWorks" > 1  </label></span>
+   </div>
+   <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+
+   <label for="TotalWorksLabel" class="grean-color"> الاعمال المرفوضة </label>
+   </div>
+   <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12">
+
+  <span class="reddot"><label for="TotalWorks" > 1  </label></span>
    </div>
    </div>
 
@@ -256,6 +264,14 @@
       </div>
       <div class="contetn">
         <div class="info-text">
+              <div class="row">
+                  <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                  </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+          <button class="btn btn-smallRed" data-toggle="modal" data-target="#Reports"  >   عمل مرفوض من قبل لجنة التحقق   <i class="fa fa-info" aria-hidden="true"></i> </button>
+</div>
+</div>
+<hr/>
           <div class="row">
 
      <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
@@ -410,13 +426,14 @@
 
     <div class="modal-content">
       <div class="modal-header">
-          <h4 class="modal-title origin-color">طلب التحقق من صحة الانجاز </h4>
+          <h4 class="modal-title origin-color"> بيانات رفض العمل التعاوني</h4>
       </div>
       <div class="modal-body">
         <p>
           <div class="row">
      <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-       <label for="workTitlelabel" class="grean-color"> مسمى العمل التعاوني</label>
+
+       <label for="workTitlelabel" class="grean-color">   مسمى العمل</label>
 
 
      </div>
@@ -431,7 +448,8 @@
                <hr/>
                <div class="row">
           <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-            <label for="workTitlelabel" class="grean-color"> وصف العمل التعاوني</label>
+
+            <label for="workTitlelabel" class="grean-color">     وصف العمل</label>
 
 
           </div>
@@ -450,15 +468,15 @@
              <hr/>
              <div class="row">
         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-          <label for="workTitlelabel" class="grean-color"> مبررات طلب التحقق </label>
+          <label for="workTitlelabel" class="grean-color">مبررات الرفض </label>
 
 
         </div>
         <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
 
-              <textarea id="ReportsReson"  rows="4" class="form-control"
-              >
-                  </textarea>
+          <label for="workTitle" >
+               مبررات ..................
+           </label>
         </div>
 
 
@@ -468,7 +486,7 @@
       </p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-smallRed" data-dismiss="modal">إرسال طلب التحقق</button>
+
           <button type="button" class="btn btn-smallgray" data-dismiss="modal">إغلاق</button>
       </div>
     </div>
